@@ -37,6 +37,10 @@
 .bp5-icon-headset{
   color: #8ABBFF;
 }
+.bp5-icon-predictive-analysis{
+  color: #8ABBFF;
+  padding-right: 10px;
+}
 .my-button{
   border-radius: 10px;
   padding: 0.4rem 0.8rem;
@@ -327,8 +331,14 @@
 }
 
 /*
-T E X T S
+L O U N G E - T E X T S
 */
+.master-lounge{
+  background-color:#404854;
+}
+.h3-lounge{
+  align-items: top;
+}
 .texts-vert{
   align-content: left;
   align-items: left;
@@ -356,11 +366,31 @@ T E X T S
   color: #F2F2F2; /* Light colored text for contrast against the dark background */
   font-family: 'Courier New', Courier, monospace; /* Typical terminal/console font */
   margin: 5px;
-  padding: 10px 10px 10px 10px; /* Consistent padding on all sides */
+  padding: 0px 50px 50px 50px; /* Consistent padding on all sides */
   border-radius: 0px; /* Optional, but rounded corners can add to the aesthetic */
 }
+.lounge-vert{
+  align-content: center;
+  padding:20px 0px 0px 40px;
+}
+.lounge-card{
+  background-color:#404854;
+}
+.lounge-card-two{
+  background-color:#404854;
+}
+.div-lounge-hero{
+  text-shadow: 5px 5px 3px rgb(171, 171, 171); /* Offset to bottom-left */
+  text-align: top;
+  margin-top: -30px;
+}
 
-
+/*
+  P A N E L S
+*/
+.div-panel-one{
+  background-color:#404854;
+}
 
 .App {
   text-align: center;

@@ -14,7 +14,7 @@ import {
 import App from "./App"
 import Files from "./Files"
 import Vault from "./Vault"
-import Texts from "./Texts"
+import TheLounge from "./Texts"
 
 const router = createBrowserRouter([
     {
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
         element: <Vault/>,
       },
       {
-        path: "/Texts",
-        element: <Texts />,
+        path: "/TheLounge",
+        element: <TheLounge />,
       },
   ]);
   
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
 function NavRoute() {
     const navigate = useNavigate();
 
-    function onClickTexts(){
-        navigate('/Texts');
+    function onClickTheLounge(){
+        navigate('/TheLounge');
     }
 
     function onClickVault(){
@@ -62,13 +62,13 @@ function NavRoute() {
     <Navbar.Group align={Alignment.LEFT} className='nav-asset'>
     <nav className="bp5-navbar bp5-dark">
       <div className="bp5-navbar-group bp5-align-left">
-        <div className="bp5-navbar-heading bp5-dark bp5-icon-headset">H4cktivate</div>
+        <div className="bp5-navbar-heading bp5-dark bp5-icon-predictive-analysis">H4cktivate</div>
       </div>
       <div class="bp5-navbar-group bp5-align-right">
           <button onClick={onClickHome} id="home" class="bp5-button bp5-minimal bp5-icon-home">Home</button>
-          <button onClick={onClickFiles} id="bt" class="bp5-button bp5-minimal bp5-icon-document">Files</button>
-          <button onClick={onClickVault} id="bt2" class="bp5-button bp5-minimal bp5-icon-playbook">Vault</button>
-          <button onClick={onClickTexts} id="bt3" class="bp5-button bp5-minimal bp5-icon-search-text">Texts</button>
+          <button onClick={onClickFiles} id="bt" class="bp5-button bp5-minimal bp5-icon-hat">Files</button>
+          <button onClick={onClickVault} id="bt2" class="bp5-button bp5-minimal bp5-icon-document">Vault</button>
+          <button onClick={onClickTheLounge} id="bt3" class="bp5-button bp5-minimal bp5-icon-tint">Lounge</button>
           <span class="bp5-navbar-divider"></span>
           <button class="bp5-button bp5-minimal bp5-icon-user"></button>
           <button class="bp5-button bp5-minimal bp5-icon-notifications"></button>
@@ -81,7 +81,7 @@ function NavRoute() {
     <Route exact path="/" element={<App />} />
     <Route exact path="/files" element={<Files />} />
     <Route exact path="/vault" element={<Vault />} />
-    <Route exact path="/Texts" element={<Texts />} />
+    <Route exact path="/TheLounge" element={<TheLounge />} />
     </Routes>
     </div>
     </>

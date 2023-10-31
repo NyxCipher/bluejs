@@ -19,7 +19,7 @@ import { Example, Examples, handleBooleanChange } from "@blueprintjs/docs-theme"
 import PanelOne from "./TextPanels/One";
 import PanelTwo from "./TextPanels/Two";
 
-export interface TextsState {
+export interface TheLoungeState {
     verticle: boolean;
     navbarTabId: TabId;
     fill: boolean;
@@ -31,8 +31,8 @@ export interface TextsState {
     useRoundTags: boolean;
 };
 
-class Texts extends React.PureComponent<ExampleProps, TextsState> {
-    state: TextsState = {
+class TheLounge extends React.PureComponent<ExampleProps, TheLoungeState> {
+    state: TheLoungeState = {
         navbarTabId: "Home",
         verticle: true,
         fill: true,
@@ -71,12 +71,17 @@ class Texts extends React.PureComponent<ExampleProps, TextsState> {
                 </>
             );
             return (
-            <>
-                <div className="texts-body">
-                <Example className="docs-tabs-example" options={options} {...this.props}>
-                <h4>T   e   x   t   s</h4>
-
-                <Switch checked={this.state.vertical} label="Use vertical tabs" onChange={this.toggleVertical} />
+            <div className="master-lounge">
+                <div className="lounge-card">
+                    
+                    <Card interactive={true} elevation={Elevation.FIVE} className='lounge-card-two'>
+                    <Example className="docs-tabs-example" options={options} {...this.props}>
+                        <div className="div-h5-hero">
+                            <h4>T   h   e &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L  o   u   n   g   e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     //&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      T   e   x   t   s</h4>
+                            <div className="lounge-vert">
+                                <Switch className="" checked={this.state.vertical} label="Use vertical tabs" onChange={this.toggleVertical} />
+                            </div>
+                        </div>
                 {/*}<Switch checked={this.state.fill} label="Fill height" onChange={this.toggleFill} />
                 <Navbar>
                     <Navbar.Group>
@@ -127,11 +132,12 @@ class Texts extends React.PureComponent<ExampleProps, TextsState> {
                         <Tabs.Expander />
                     </Tabs>
                 </Example>
+                </Card>
                 </div>
-            </>
+            </div>
             )
         }
         handleNavbarTabChange = (navbarTabId: TabId) => this.setState({ navbarTabId });
     }
 
-    export default Texts
+    export default TheLounge
