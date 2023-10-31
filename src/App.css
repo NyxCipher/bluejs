@@ -325,6 +325,43 @@
 .vault-console{
   background-color: #1C2127;
 }
+
+/*
+T E X T S
+*/
+.texts-vert{
+  align-content: left;
+  align-items: left;
+  position: absolute;
+}
+.texts-body{
+  background-color: #252A31;
+}
+.texts-console-outer{
+  border: 5px solid #5F6B7C;
+  margin: 5px 5px 5px 5px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.texts-console-one{
+  border: #D33D17;
+  margin: 5px 5px 5px 5px;
+  padding-bottom: 10px;
+}
+.texts-console-two{
+  border: 2px solid #D33D17; /* Gives a solid border with the specified color */
+  background-color: #2E2E2E; /* Dark background resembling a terminal */
+  color: #F2F2F2; /* Light colored text for contrast against the dark background */
+  font-family: 'Courier New', Courier, monospace; /* Typical terminal/console font */
+  margin: 5px;
+  padding: 10px 10px 10px 10px; /* Consistent padding on all sides */
+  border-radius: 0px; /* Optional, but rounded corners can add to the aesthetic */
+}
+
+
+
 .App {
   text-align: center;
 }

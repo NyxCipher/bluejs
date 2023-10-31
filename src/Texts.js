@@ -1,7 +1,18 @@
 import React from "react";
 import './App.css';
-import { Tab, Tabs, type TabId, } from "@blueprintjs/core";
-import { Alignment, Classes, Divider, H4, H5, InputGroup, Navbar, Switch } from "@blueprintjs/core";
+import {
+    Alignment,
+    Classes,
+    Divider,
+    H4,
+    H5,
+    InputGroup,
+    Navbar,
+    Switch,
+    Tab,
+    type TabId,
+    Tabs,
+} from "@blueprintjs/core";
 import { Collapse, Pre, Button, Card, Elevation } from "@blueprintjs/core";
 import { Example, Examples, handleBooleanChange } from "@blueprintjs/docs-theme";
 // Panels
@@ -20,7 +31,7 @@ export interface TextsState {
     useRoundTags: boolean;
 };
 
-export class Texts extends React.PureComponent<ExampleProps, TextsState> {
+class Texts extends React.PureComponent<ExampleProps, TextsState> {
     state: TextsState = {
         navbarTabId: "Home",
         verticle: true,
@@ -44,28 +55,29 @@ export class Texts extends React.PureComponent<ExampleProps, TextsState> {
 
     toggleTag = handleBooleanChange(tag => this.setState({ showTags: tag }));
 
-
-    render(){
-        const options = (
-            <>
-                <H5>Appearance props</H5>
-                <Switch checked={this.state.large} label="Large size" onChange={this.toggleLarge} />
-                <Switch checked={this.state.animate} label="Animate tab indicator" onChange={this.toggleAnimate} />
-                <H5>Behavior props</H5>
-                <Switch
-                    checked={this.state.activePanelOnly}
-                    label="Render active tab panel only"
-                    onChange={this.toggleActiveOnly}
-                />
-                <H5>Tab content props</H5>
-            </>
-        )
+        render() {
+            const options = (
+                <>
+                    {/*<H5>Appearance props</H5>
+                    <Switch checked={this.state.large} label="Large size" onChange={this.toggleLarge} />
+                    <Switch checked={this.state.animate} label="Animate tab indicator" onChange={this.toggleAnimate} />
+                    <H5>Behavior props</H5>
+                    <Switch
+                        checked={this.state.activePanelOnly}
+                        label="Render active tab panel only"
+                        onChange={this.toggleActiveOnly}
+                    />
+            <H5>Tab content props</H5>*/}
+                </>
+            );
             return (
             <>
-                <div>
-                <Texts className="docs-tabs-example" options={options} {...this.props}>
+                <div className="texts-body">
+                <Example className="docs-tabs-example" options={options} {...this.props}>
                 <h4>T   e   x   t   s</h4>
-                <Switch checked={this.state.fill} label="Fill height" onChange={this.toggleFill} />
+
+                <Switch checked={this.state.vertical} label="Use vertical tabs" onChange={this.toggleVertical} />
+                {/*}<Switch checked={this.state.fill} label="Fill height" onChange={this.toggleFill} />
                 <Navbar>
                     <Navbar.Group>
                         <Navbar.Heading>
@@ -92,35 +104,34 @@ export class Texts extends React.PureComponent<ExampleProps, TextsState> {
                             />
                         </Tabs>
                     </Navbar.Group>
-                </Navbar>
+            </Navbar>*/}
                 <Divider style={{ margin: "20px 0", width: "100%" }} />
-                <H4>Verticle Tabs</H4>
-                <Switch checked={this.state.vertical} label="Use vertical tabs" onChange={this.toggleVertical} />
-                <Tabs
-                    animate={this.state.animate}
-                    id="VertAngle"
-                    key={this.state.vertical ? "vertical" : "horizontal"}
-                    large={this.state.large}
-                    renderActiveTabPanelOnly={this.state.activePanelOnly}
-                    vertical={this.state.vertical}
-                >
-                    <Tab id="rx" title="React" panel={<PanelTwo />} />
-                    <Tab
-                        id="ng"
-                        title="Angular"
-                        panel={<PanelOne />}
-                        tagContent={this.state.showTags ? 10 : undefined}
-                        tagProps={{ round: this.state.useRoundTags }}
-                    />
-                    <Tab id="mb" title="Ember" panel={<PanelOne />} panelClassName="ember-panel" />
-                    <Tab id="bb" disabled={true} title="Backbone" panel={<PanelTwo />} />
-                    <Tabs.Expander />
-                    <InputGroup fill={true} type="text" placeholder="Search..." />
-                </Tabs>
-                </Texts>
+                    <Tabs
+                        animate={this.state.animate}
+                        id="VertAngle"
+                        key={this.state.vertical ? "vertical" : "horizontal"}
+                        large={this.state.large}
+                        renderActiveTabPanelOnly={this.state.activePanelOnly}
+                        vertical={this.state.vertical}
+                    >
+                        <Tab id="rx" title="B   A   S   I   C" panel={<PanelOne />} />
+                        <Tab
+                            id="ng"
+                            title="N    0   0   B   S"
+                            panel={<PanelTwo />}
+                            tagContent={this.state.showTags ? 10 : undefined}
+                            tagProps={{ round: this.state.useRoundTags }}
+                        />
+                        <Tab id="mb" title="E   M   B   E   R" panel={<PanelOne />} panelClassName="ember-panel" />
+                        <Tab id="bb" title="U   B   E   R" panel={<PanelTwo />} />
+                        <Tabs.Expander />
+                    </Tabs>
+                </Example>
                 </div>
             </>
             )
         }
         handleNavbarTabChange = (navbarTabId: TabId) => this.setState({ navbarTabId });
     }
+
+    export default Texts

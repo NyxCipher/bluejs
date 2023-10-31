@@ -14,7 +14,7 @@ import {
 import App from "./App"
 import Files from "./Files"
 import Vault from "./Vault"
-import TextPanel from "./TextPanel"
+import Texts from "./Texts"
 
 const router = createBrowserRouter([
     {
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
         element: <Vault/>,
       },
       {
-        path: "/textpanel",
-        element: <TextPanel />,
+        path: "/Texts",
+        element: <Texts />,
       },
   ]);
   
@@ -40,7 +40,7 @@ function NavRoute() {
     const navigate = useNavigate();
 
     function onClickTexts(){
-        navigate('/textpanel');
+        navigate('/Texts');
     }
 
     function onClickVault(){
@@ -81,7 +81,7 @@ function NavRoute() {
     <Route exact path="/" element={<App />} />
     <Route exact path="/files" element={<Files />} />
     <Route exact path="/vault" element={<Vault />} />
-    <Route exact path="/textpanel" element={<TextPanel />} />
+    <Route exact path="/Texts" element={<Texts />} />
     </Routes>
     </div>
     </>
