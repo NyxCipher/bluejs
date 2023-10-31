@@ -1,3 +1,22 @@
+# The H4cktivate Mindset Project
+This project was created using [BlueprintJS](https://blueprintjs.com).
+This project is based in ReactJS
+
+# About Project H.M.
+Professionally, I work in DevOps, specifically IT-Operations. Little development is expected of me here, that is why I like to suprise people with hidden NodeJS and Python Knowledge, even some MINGW Cross-Compiling C++ knowledge as well. But this knowledge is seated in my drive to learn InfoSec, Security, and Penetration Testing. The goal and purpose of H.M. is to seat my knowledge for you and to grow it accordingly by freely teaching and giving to you what was once given freely to me.
+
+### Segments:
+You will find various segments on the site. 
+* The Vault Segment: Is a series of Key-Books and Periodicals that have helped me learn and that are helping me learn throughout the years. 
+* The Lounge Segment: will house a series of TEXT-Based-Tutorials on InfoSec//Security. 
+* The Files Segment:  I hold close to me. A couple a friends and I share a massive archive of Bookmarks and data-points on relevant IT and CyberSecurity Key Areas of interest. Those will be houses here.
+
+# About Development
+I started this project to explore the changes in React & TypeScript from over the past two years.
+
+After searching for the top React UI Frameworks, and having found nearly 30 different types,
+I setteled on three main ones: MaterialKitUI, AntJS, and BluePrintJS. I truly loved BlueprintJS the most, but setteled on MaterialKitUI for its ease of use. Having become unsetteled with how little React was used in the free version, I started reading some Tutorials and ultimately switched to BlueprintJS. The challenge has been a welcoming one and I am enjoying pushing my boundries in learning how to configure the various aspects of BlueprintJS.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
