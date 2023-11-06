@@ -15,9 +15,12 @@ import {
 } from "@blueprintjs/core";
 import { Collapse, Pre, Button, Card, Elevation } from "@blueprintjs/core";
 import { Example, Examples, handleBooleanChange } from "@blueprintjs/docs-theme";
+import { Flame } from "@blueprintjs/icons";
+
 // Panels
 import PanelOne from "./TextPanels/One";
 import PanelTwo from "./TextPanels/Two";
+import PanelEmber from "./TextPanels/Ember";
 
 export interface TheLoungeState {
     verticle: boolean;
@@ -127,8 +130,8 @@ class TheLounge extends React.PureComponent<ExampleProps, TheLoungeState> {
                             tagContent={this.state.showTags ? 10 : undefined}
                             tagProps={{ round: this.state.useRoundTags }}
                         />
-                        <Tab id="mb" title="E   M   B   E   R" panel={<PanelOne />} panelClassName="ember-panel" />
                         <Tab id="bb" title="U   B   E   R" panel={<PanelTwo />} />
+                        <Tab id="mb" icon="flame" title="E   M   B   E   R" panel={<PanelEmber />} panelClassName="ember-panel" />
                         <Tabs.Expander />
                     </Tabs>
                 </Example>

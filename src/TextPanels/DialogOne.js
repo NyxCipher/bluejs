@@ -97,6 +97,30 @@ export default class DialogExample extends React.PureComponent<ExampleProps<Blue
                     footerStyle="default"
                     {...this.state}
                 />
+                <ButtonRoot
+                    className={this.props.data}
+                    icon="application"
+                    title="Root"
+                    buttonText="Mobile R00t"
+                    footerStyle="default"
+                    {...this.state}
+                />
+                <ButtonSocial
+                    className={this.props.data}
+                    icon="blocked-person"
+                    title="Social"
+                    buttonText="Social Engineering"
+                    footerStyle="default"
+                    {...this.state}
+                />
+                <ButtonVPN
+                    className={this.props.data}
+                    icon="eye-off"
+                    title="VPN"
+                    buttonText="VPN/Proxy"
+                    footerStyle="default"
+                    {...this.state}
+                />
                 {/*<ButtonWithDialog
                     className={this.props.data}
                     icon="info-sign"
@@ -165,6 +189,7 @@ function ButtonTools({
         </>
     );
 }
+
 function ButtonBasics({
     buttonText,
     footerStyle,
@@ -190,6 +215,174 @@ function ButtonBasics({
                     <p>
                         <strong>
                             Basics Manual
+                        </strong>
+                    </p>
+                    <p>
+                        Palantir Foundry radically reimagines the way enterprises interact with data by amplifying and
+                        extending the power of data integration. With Foundry, anyone can source, fuse, and transform
+                        data into any shape they desire. Business analysts become data engineers — and leaders in their
+                        organization’s data revolution.
+                    </p>
+                    <p>
+                        Foundry’s back end includes a suite of best-in-class data integration capabilities: data
+                        provenance, git-style versioning semantics, granular access controls, branching, transformation
+                        authoring, and more. But these powers are not limited to the back-end IT shop.
+                    </p>
+                    <p>
+                        In Foundry, tables, applications, reports, presentations, and spreadsheets operate as data
+                        integrations in their own right. Access controls, transformation logic, and data quality flow
+                        from original data source to intermediate analysis to presentation in real time. Every end
+                        product created in Foundry becomes a new data source that other users can build upon. And the
+                        enterprise data foundation goes where the business drives it.
+                    </p>
+                    <p>Start the revolution. Unleash the power of data integration with Palantir Foundry.</p>
+                </DialogBody>
+
+                {footerStyle === "default" && <DialogFooter actions={footerActions}>All checks passed</DialogFooter>}
+
+                {footerStyle === "minimal" && <DialogFooter minimal={true} actions={footerActions} />}
+            </Dialog>
+        </>
+    );
+}
+
+function ButtonRoot({
+    buttonText,
+    footerStyle,
+    ...props
+}: Omit<DialogProps, "isOpen"> & { buttonText: string; footerStyle: "default" | "minimal" | "none" }) {
+    const [isOpen, setIsOpen] = React.useState(false);
+    const handleButtonClick = React.useCallback(() => setIsOpen(!isOpen), []);
+    const handleClose = React.useCallback(() => setIsOpen(false), []);
+    const footerActions = (
+        <>
+            <Tooltip content="This button is hooked up to close the dialog.">
+                <Button onClick={handleClose}>Close</Button>
+            </Tooltip>
+            <VisitFoundryWebsiteAnchorButton />
+        </>
+    );
+
+    return (
+        <>
+            <Button onClick={handleButtonClick} text={buttonText} />
+            <Dialog {...props} isOpen={isOpen} onClose={handleClose}>
+                <DialogBody useOverflowScrollContainer={footerStyle === "minimal" ? false : undefined}>
+                    <p>
+                        <strong>
+                            Basics Manual
+                        </strong>
+                    </p>
+                    <p>
+                        Palantir Foundry radically reimagines the way enterprises interact with data by amplifying and
+                        extending the power of data integration. With Foundry, anyone can source, fuse, and transform
+                        data into any shape they desire. Business analysts become data engineers — and leaders in their
+                        organization’s data revolution.
+                    </p>
+                    <p>
+                        Foundry’s back end includes a suite of best-in-class data integration capabilities: data
+                        provenance, git-style versioning semantics, granular access controls, branching, transformation
+                        authoring, and more. But these powers are not limited to the back-end IT shop.
+                    </p>
+                    <p>
+                        In Foundry, tables, applications, reports, presentations, and spreadsheets operate as data
+                        integrations in their own right. Access controls, transformation logic, and data quality flow
+                        from original data source to intermediate analysis to presentation in real time. Every end
+                        product created in Foundry becomes a new data source that other users can build upon. And the
+                        enterprise data foundation goes where the business drives it.
+                    </p>
+                    <p>Start the revolution. Unleash the power of data integration with Palantir Foundry.</p>
+                </DialogBody>
+
+                {footerStyle === "default" && <DialogFooter actions={footerActions}>All checks passed</DialogFooter>}
+
+                {footerStyle === "minimal" && <DialogFooter minimal={true} actions={footerActions} />}
+            </Dialog>
+        </>
+    );
+}
+
+function ButtonSocial({
+    buttonText,
+    footerStyle,
+    ...props
+}: Omit<DialogProps, "isOpen"> & { buttonText: string; footerStyle: "default" | "minimal" | "none" }) {
+    const [isOpen, setIsOpen] = React.useState(false);
+    const handleButtonClick = React.useCallback(() => setIsOpen(!isOpen), []);
+    const handleClose = React.useCallback(() => setIsOpen(false), []);
+    const footerActions = (
+        <>
+            <Tooltip content="This button is hooked up to close the dialog.">
+                <Button onClick={handleClose}>Close</Button>
+            </Tooltip>
+            <VisitFoundryWebsiteAnchorButton />
+        </>
+    );
+
+    return (
+        <>
+            <Button onClick={handleButtonClick} text={buttonText} />
+            <Dialog {...props} isOpen={isOpen} onClose={handleClose}>
+                <DialogBody useOverflowScrollContainer={footerStyle === "minimal" ? false : undefined}>
+                    <p>
+                        <strong>
+                            Lounge Tools
+                        </strong>
+                    </p>
+                    <p>
+                        Palantir Foundry radically reimagines the way enterprises interact with data by amplifying and
+                        extending the power of data integration. With Foundry, anyone can source, fuse, and transform
+                        data into any shape they desire. Business analysts become data engineers — and leaders in their
+                        organization’s data revolution.
+                    </p>
+                    <p>
+                        Foundry’s back end includes a suite of best-in-class data integration capabilities: data
+                        provenance, git-style versioning semantics, granular access controls, branching, transformation
+                        authoring, and more. But these powers are not limited to the back-end IT shop.
+                    </p>
+                    <p>
+                        In Foundry, tables, applications, reports, presentations, and spreadsheets operate as data
+                        integrations in their own right. Access controls, transformation logic, and data quality flow
+                        from original data source to intermediate analysis to presentation in real time. Every end
+                        product created in Foundry becomes a new data source that other users can build upon. And the
+                        enterprise data foundation goes where the business drives it.
+                    </p>
+                    <p>Start the revolution. Unleash the power of data integration with Palantir Foundry.</p>
+                </DialogBody>
+
+                {footerStyle === "default" && <DialogFooter actions={footerActions}>All checks passed</DialogFooter>}
+
+                {footerStyle === "minimal" && <DialogFooter minimal={true} actions={footerActions} />}
+            </Dialog>
+        </>
+    );
+}
+
+function ButtonVPN({
+    buttonText,
+    footerStyle,
+    ...props
+}: Omit<DialogProps, "isOpen"> & { buttonText: string; footerStyle: "default" | "minimal" | "none" }) {
+    const [isOpen, setIsOpen] = React.useState(false);
+    const handleButtonClick = React.useCallback(() => setIsOpen(!isOpen), []);
+    const handleClose = React.useCallback(() => setIsOpen(false), []);
+    const footerActions = (
+        <>
+            <Tooltip content="This button is hooked up to close the dialog.">
+                <Button onClick={handleClose}>Close</Button>
+            </Tooltip>
+            <VisitFoundryWebsiteAnchorButton />
+        </>
+    );
+
+    return (
+        <>
+            <Button onClick={handleButtonClick} text={buttonText} />
+            <Dialog {...props} isOpen={isOpen} onClose={handleClose}>
+                <DialogBody useOverflowScrollContainer={footerStyle === "minimal" ? false : undefined}>
+                    <p>
+                        <strong>
+                            Lounge Tools
                         </strong>
                     </p>
                     <p>
