@@ -5,8 +5,11 @@ import { H4, H3, Divider, Button, Collapse, Pre, Card, Elevation, Navbar, Alignm
 
 import DialogExample from "./DialogOne.js";
 
+import { Web3App } from "./Mint.js";
+
 function PanelOne() {
     return (
+        
      <>
         <div className="texts-body texts-console-outer">
             <ul class="bp5-dark bp5-tab-list {{.modifier}}" role="tablist">
@@ -105,7 +108,7 @@ function PanelOne() {
             </ul>
             <p>
             </p>
-            <DialogExample />
+            <Web3App />
         </Card>
         </div>
         </div>

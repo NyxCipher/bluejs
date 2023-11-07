@@ -4,12 +4,21 @@ import './index.css';
 import NavRoute from './Router.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { MetaMaskProvider } from '@metamask/sdk-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <MetaMaskProvider debug={false} sdkOptions={{
+      checkInstallationImmediately: false,
+      dappMetadata: {
+        name: "H4M",
+        url: window.location.host,
+      }
+    }}>
       <NavRoute />
+      </MetaMaskProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
