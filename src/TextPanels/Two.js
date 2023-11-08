@@ -129,6 +129,7 @@ function PanelTwo() {
                 I have an idea, why don't we all chip in and reverse engineer some EDRs. [Brute Ratel Beat Us To It...] Come on, Let's get in the game! Back then, in order to make a name for
                 yourself you have to Pwn a whole Platform. Today, just write some bad-ass code that helps a lot of bad-ass people and you're in. You've made your hacker name for yourself. Isn't that
                 why you hack in the first place? To be remembered? Then again, who cares anymore? I'll maintain this site for the 'Good of the Cause' and in rememberance of how it use to be.
+            
             </p>
             </p>
             <DialogExample />
