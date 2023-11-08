@@ -51,7 +51,7 @@ function App () {
             <h1 className='bp5-dark'>...Wake Up...</h1>
             </Card>
             <Card interactive={true} elevation={Elevation.ONE} className='main-card-2'>
-              <div className="bp5-running-text {{.modifier}}">
+              <div className="bp5-dark">
               <blockquote>
                 <i>Everyone has the right to freedom of thought, conscience and religion; this right 
                   includes freedom to change his religion or belief, and freedom, either alone or in 
