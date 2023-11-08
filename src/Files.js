@@ -8,7 +8,7 @@ function Files() {
   return (
    <>
    <Card interactive={true} elevation={Elevation.ONE} className='files-card'>
-   <div className="card-container">
+   <div className="bp5-dark card-container">
     <Card interactive={true} elevation={Elevation.ONE} className='files-sub-card files-inline-card'>
     <div class="bp5-running-text">
         <div class="custom_font">

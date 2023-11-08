@@ -22,7 +22,6 @@ import { Example, type ExampleProps } from "@blueprintjs/docs-theme";
 
 import DrawerExample from "./Drawer"
 
-
 type NodePath = number[];
 
 type TreeAction =
@@ -145,7 +144,7 @@ const INITIAL_STATE: TreeNodeInfo[] = [
                 label: "Item 0",
                 secondaryLabel: (
                     <Tooltip content="An eye!">
-                        <Icon icon="eye-open" />
+                        <button onChange={}></button><Icon icon="eye-open" />
                     </Tooltip>
                     
                 ),
