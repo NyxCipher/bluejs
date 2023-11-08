@@ -68,7 +68,7 @@ function NavRoute() {
           <button onClick={onClickHome} id="home" class="bp5-button bp5-minimal bp5-icon-home">Home</button>
           <button onClick={onClickFiles} id="bt" class="bp5-button bp5-minimal bp5-icon-hat">Files</button>
           <button onClick={onClickVault} id="bt2" class="bp5-button bp5-minimal bp5-icon-document">Vault</button>
-          <button onClick={onClickTheLounge} id="bt3" class="bp5-button bp5-minimal bp5-icon-tint">Lounge</button>
+          <button onClick={onClickTheLounge} id="bt3" class="bp5-button bp5-minimal bp5-icon-glass">Lounge</button>
           <span class="bp5-navbar-divider"></span>
           <button class="bp5-button bp5-minimal bp5-icon-user"></button>
           <button class="bp5-button bp5-minimal bp5-icon-notifications"></button>

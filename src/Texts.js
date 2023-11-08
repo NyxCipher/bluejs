@@ -122,15 +122,16 @@ class TheLounge extends React.PureComponent<ExampleProps, TheLoungeState> {
                         renderActiveTabPanelOnly={this.state.activePanelOnly}
                         vertical={this.state.vertical}
                     >
-                        <Tab id="rx" title="B   A   S   I   C" panel={<PanelOne />} />
+                        <Tab id="rx" icon="database" title="B   A   S   I   C" panel={<PanelOne />} />
                         <Tab
                             id="ng"
+                            icon="learning"
                             title="N    0   0   B   S"
                             panel={<PanelTwo />}
                             tagContent={this.state.showTags ? 10 : undefined}
                             tagProps={{ round: this.state.useRoundTags }}
                         />
-                        <Tab id="bb" title="U   B   E   R" panel={<PanelTwo />} />
+                        <Tab id="bb" icon="hat" title="U   B   E   R" panel={<PanelTwo />} />
                         <Tab id="mb" icon="flame" title="E   M   B   E   R" panel={<PanelEmber />} panelClassName="ember-panel" />
                         <Tabs.Expander />
                     </Tabs>
