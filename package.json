@@ -2,6 +2,10 @@
   "name": "bluejs",
   "version": "0.1.0",
   "private": true,
+  "engines" : { 
+    "npm" : ">=9.5.1",
+    "node" : ">=18.16.0"
+  }
   "dependencies": {
     "@blueprintjs/core": "^5.5.1",
     "@blueprintjs/docs-theme": "^5.1.1",
