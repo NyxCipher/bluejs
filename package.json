@@ -2,9 +2,9 @@
   "name": "bluejs",
   "version": "0.1.0",
   "private": true,
-  "engines" : { 
-    "npm" : "9.5.1",
-    "node" : "18.16.0"
+  "engines": {
+    "npm": "9.5.1",
+    "node": "18.16.0"
   },
   "dependencies": {
     "@blueprintjs/core": "^5.5.1",
@@ -29,6 +29,7 @@
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
+    "serve": "^14.2.1",
     "web-vitals": "^2.1.4",
     "web3": "^4.2.2"
   },
