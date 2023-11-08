@@ -33,7 +33,8 @@
     "web3": "^4.2.2"
   },
   "scripts": {
-    "heroku-postbuild": "npm install",
+    "heroku-postbuild": "npm run build",
+    "dev": "react-scripts start",
     "start": "node index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
