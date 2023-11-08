@@ -144,7 +144,7 @@ const INITIAL_STATE: TreeNodeInfo[] = [
                 label: "Item 0",
                 secondaryLabel: (
                     <Tooltip content="An eye!">
-                        <button onChange={}></button><Icon icon="eye-open" />
+                        <Icon icon="eye-open" />
                     </Tooltip>
                     
                 ),
