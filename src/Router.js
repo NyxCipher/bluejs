@@ -62,7 +62,7 @@ function NavRoute() {
     <Navbar.Group align={Alignment.LEFT} className='nav-asset'>
     <nav className="bp5-navbar bp5-dark">
       <div className="bp5-navbar-group bp5-align-left">
-        <div className="bp5-navbar-heading bp5-dark bp5-icon-predictive-analysis">H4cktivate</div>
+        <div className="bp5-navbar-heading bp5-dark bp5-icon-predictive-analysis">&nbsp;H4cktivate Mindset</div>
       </div>
       <div class="bp5-navbar-group bp5-align-right">
           <button onClick={onClickHome} id="home" class="bp5-button bp5-minimal bp5-icon-home">Home</button>

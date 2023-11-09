@@ -20,6 +20,7 @@ import { Flame } from "@blueprintjs/icons";
 // Panels
 import PanelOne from "./TextPanels/One";
 import PanelTwo from "./TextPanels/Two";
+import PanelThree from "./TextPanels/Three";
 import PanelEmber from "./TextPanels/Ember";
 
 export interface TheLoungeState {
@@ -131,7 +132,7 @@ class TheLounge extends React.PureComponent<ExampleProps, TheLoungeState> {
                             tagContent={this.state.showTags ? 10 : undefined}
                             tagProps={{ round: this.state.useRoundTags }}
                         />
-                        <Tab id="bb" icon="hat" title="U   B   E   R" panel={<PanelTwo />} />
+                        <Tab id="bb" icon="hat" title="U   B   E   R" panel={<PanelThree/>} />
                         <Tab id="mb" icon="flame" title="E   M   B   E   R" panel={<PanelEmber />} panelClassName="ember-panel" />
                         <Tabs.Expander />
                     </Tabs>

@@ -10,6 +10,7 @@ import HackADay from './assets/Unknown.png';
 import TwoSix00 from './assets/2600_Spring_2012.gif';
 import LinuxFormat from './assets/linuxFormat.jpeg';
 import EyeSpy from './assets/eye-spy-magazine-issue-129-cover.jpg'
+import CDC from './assets/cdc.jpeg'
 
 import Ubuntu from './VaultOS/ubuntu';
 import EndOs from './VaultOS/endos';
@@ -152,6 +153,9 @@ function Vault() {
             </Card>
             <Card interactive={true} elevation={Elevation.ONE} className='vault-sub-card vault-inline-card-text'>
                 <img className="vault-img-mag-rectangle" src={EyeSpy}/>
+            </Card>
+            <Card interactive={true} elevation={Elevation.ONE} className='vault-sub-card vault-inline-card-text'>
+                <img className="vault-img-mag-rectangle" src={CDC}/>
             </Card>
             </div>
         </div>
